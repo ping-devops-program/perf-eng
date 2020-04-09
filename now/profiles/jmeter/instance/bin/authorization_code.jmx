@@ -39,8 +39,8 @@
               <stringProp name="Argument.value">2FederateM0re</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
-            <elementProp name="pingfederate" elementType="Argument">
-              <stringProp name="Argument.name">pingfederate</stringProp>
+            <elementProp name="pfHost" elementType="Argument">
+              <stringProp name="Argument.name">pfHost</stringProp>
               <stringProp name="Argument.value">${__P(pfHost,localhost)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
@@ -66,7 +66,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">${pingfederate}</stringProp>
+          <stringProp name="HTTPSampler.domain">${pfHost}</stringProp>
           <stringProp name="HTTPSampler.port">${pfPort}</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
