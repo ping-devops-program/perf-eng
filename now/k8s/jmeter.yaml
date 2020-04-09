@@ -14,11 +14,11 @@ spec:
       containers:
       - env:
           - name: SERVER_PROFILE_URL
-            value: https://github.com/ping-devops-program/anydevops
+            value: https://github.com/ping-devops-program/perf-eng
           - name: SERVER_PROFILE_PATH
-            value: now/profile/jmeter
+            value: now/profiles/jmeter
           - name: STARTUP_FOREGROUND_OPTS
-            value: --nongui -t /opt/out/instance/bin/authorization_code.jmx -JthreadCount=1 -Jduration=1000
+            value: --nongui -t /opt/out/instance/bin/authorization_code.jmx -JthreadCount=1 -Jduration=1000 -JpfHost=pingfederate -JpfPort=9031
         image: pingidentity/apache-jmeter:edge
         imagePullPolicy: Always
         name: jmeter
